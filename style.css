@@ -1,0 +1,239 @@
+body{
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+   width: 90%;
+   margin: 100px auto; 
+}
+
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #ccc;
+}
+
+nav .nav-right ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav .nav-right ul a{
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+}
+nav .nav-left a{
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+
+}
+nav .nav-left a span{
+    font-weight: bold;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+}
+nav .nav-left a:hover{
+  background-color: #ccc;
+}
+nav .nav-right ul a:hover{
+    background-color: #ccc;
+}
+nav .menu{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+header{
+    background-image: url(header.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+header h2{
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+header h2 span{
+    margin-right: 15px;
+    background-color: black; 
+    padding: 10px;
+    opacity: 0.7;
+}
+
+
+hr{
+    margin: 30px;
+    opacity: 0.2;
+}
+
+
+.houses{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.house{
+    width: 24%;
+    position: relative;
+}
+.house p{
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+.house img{
+    width: 100%;
+}
+.main-p{
+    line-height: 1.8;
+    font-size: 18px;
+    color: #ccc;
+}
+.chars{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+
+}
+.char{
+    width: 24%;
+}
+.char img{
+    width: 100%;
+}
+.char > *{
+    margin-bottom: 10px;
+}
+.char h4{
+    opacity: 0.5;
+}
+.char p{
+    opacity: 1.5;
+}
+.char button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 1s;
+}
+.char button:hover{
+    background-color: #ccc;
+}
+.contact p{
+    margin-bottom: 40px;
+}
+.contact input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+}
+.contact button{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.contact button:hover{
+    background-color: #fff;
+    color: blue
+}
+
+
+.map img{
+    width: 100%;
+}
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+@media screen and (max-width : 480px){
+    nav{
+        padding: 20px;
+    }
+    nav .nav-right ul{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    header h2{
+        font-size: 40px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    }
+    .houses{
+        flex-direction: column;
+    }
+    .house{
+        width: 100%;
+    }
+    .chars{
+        flex-direction: column;
+    }
+    .char{
+        width: 100%;
+    }
+}
+@media screen and (min-width : 481px) and (max-width : 768px){
+    nav{
+        padding: 20px;
+    }
+    nav .nav-right ul{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    header h2{
+        left: 40%;
+    }
+
+    .house{
+        width: 48%;
+    }
+    .chars{
+        flex-wrap: wrap;
+    }
+    .char{
+        width: 48%;
+    } 
+}
